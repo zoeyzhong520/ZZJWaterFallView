@@ -8,22 +8,78 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+//视图类
+#import "ZZJCollectionViewLayout.h"
+#import "ZZJCollectionViewCell.h"
+
+//工具类
+#import "MJExtension.h"
+#import "ShopModel.h"
+
+@interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,ZZJCollectionViewLayoutDelegate>
+
+@property (nonatomic,strong) UICollectionView *collectionView;
+@property (nonatomic,strong) NSMutableArray *shops;//数据源
 
 @end
 
 @implementation ViewController
 
+- (NSMutableArray *)shops {
+    if (!_shops) {
+        self.shops = [[NSMutableArray alloc] init];
+    }
+    return _shops;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self setPage];
 }
 
+- (void)setPage {
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    //初始化数据
+    NSArray *shopsArray = [ShopModel objectArrayWithFilename:@"1.plist"];
+    [self.shops addObjectsFromArray:shopsArray];
+    
+    ZZJCollectionViewLayout *layout = [[ZZJCollectionViewLayout alloc] init];
+    layout.collectionViewLayoutDelegate = self;
+    _collectionView = [[UICollectionView alloc] initWithFrame:[UIScreen mainScreen].bounds collectionViewLayout:layout];
+    _collectionView.delegate = self;
+    _collectionView.dataSource = self;
+    _collectionView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_collectionView];
+    [_collectionView registerClass:[ZZJCollectionViewCell class] forCellWithReuseIdentifier:ZZJCollectionCellID];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark -- UICollectionViewDelegate && UICollectionViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    NSLog(@"%ld",self.shops.count);
+    return self.shops.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    ZZJCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZZJCollectionCellID forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor redColor];
+    cell.shop = self.shops[indexPath.row];
+    [cell configCell];
+    return cell;
+}
+
+#pragma mark -- ZZJCollectionViewLayoutDelegate
+- (CGFloat)flowLayout:(ZZJCollectionViewLayout *)flowLayout heightForWidth:(CGFloat)width atIndexPath:(NSIndexPath *)indexPath {
+    
+    ShopModel *shop = self.shops[indexPath.row];
+    return shop.h / shop.w * width;
+}
 
 @end

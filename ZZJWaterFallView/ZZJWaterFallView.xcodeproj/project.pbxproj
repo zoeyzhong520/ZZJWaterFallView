@@ -15,6 +15,21 @@
 		D83765BB1ECDAA0F00F03127 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83765B91ECDAA0F00F03127 /* LaunchScreen.storyboard */; };
 		D83765C61ECDAA0F00F03127 /* ZZJWaterFallViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D83765C51ECDAA0F00F03127 /* ZZJWaterFallViewTests.m */; };
 		D83765D11ECDAA0F00F03127 /* ZZJWaterFallViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D83765D01ECDAA0F00F03127 /* ZZJWaterFallViewUITests.m */; };
+		DDDD74021ECDE9EE00A492D0 /* ZZJCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD74011ECDE9EE00A492D0 /* ZZJCollectionViewLayout.m */; };
+		DDDD74051ECDF64000A492D0 /* ZZJCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD74041ECDF64000A492D0 /* ZZJCollectionViewCell.m */; };
+		DDDD74081ECDF71200A492D0 /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDDD74071ECDF71200A492D0 /* 1.plist */; };
+		DDDD74221ECDF74900A492D0 /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD740C1ECDF74900A492D0 /* MJArgument.m */; };
+		DDDD74231ECDF74900A492D0 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD740E1ECDF74900A492D0 /* MJConst.m */; };
+		DDDD74241ECDF74900A492D0 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD74111ECDF74900A492D0 /* MJFoundation.m */; };
+		DDDD74251ECDF74900A492D0 /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD74131ECDF74900A492D0 /* MJIvar.m */; };
+		DDDD74261ECDF74900A492D0 /* MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD74151ECDF74900A492D0 /* MJMember.m */; };
+		DDDD74271ECDF74900A492D0 /* MJMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD74171ECDF74900A492D0 /* MJMethod.m */; };
+		DDDD74281ECDF74900A492D0 /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD74191ECDF74900A492D0 /* MJType.m */; };
+		DDDD74291ECDF74900A492D0 /* MJTypeEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD741B1ECDF74900A492D0 /* MJTypeEncoding.m */; };
+		DDDD742A1ECDF74900A492D0 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD741D1ECDF74900A492D0 /* NSObject+MJCoding.m */; };
+		DDDD742B1ECDF74900A492D0 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD741F1ECDF74900A492D0 /* NSObject+MJKeyValue.m */; };
+		DDDD742C1ECDF74900A492D0 /* NSObject+MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD74211ECDF74900A492D0 /* NSObject+MJMember.m */; };
+		DDDD74301ECDF79200A492D0 /* ShopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD742F1ECDF79200A492D0 /* ShopModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +66,36 @@
 		D83765CC1ECDAA0F00F03127 /* ZZJWaterFallViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZJWaterFallViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83765D01ECDAA0F00F03127 /* ZZJWaterFallViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZJWaterFallViewUITests.m; sourceTree = "<group>"; };
 		D83765D21ECDAA0F00F03127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDDD74001ECDE9EE00A492D0 /* ZZJCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJCollectionViewLayout.h; sourceTree = "<group>"; };
+		DDDD74011ECDE9EE00A492D0 /* ZZJCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJCollectionViewLayout.m; sourceTree = "<group>"; };
+		DDDD74031ECDF64000A492D0 /* ZZJCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZJCollectionViewCell.h; sourceTree = "<group>"; };
+		DDDD74041ECDF64000A492D0 /* ZZJCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZJCollectionViewCell.m; sourceTree = "<group>"; };
+		DDDD74071ECDF71200A492D0 /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		DDDD740B1ECDF74900A492D0 /* MJArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJArgument.h; sourceTree = "<group>"; };
+		DDDD740C1ECDF74900A492D0 /* MJArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJArgument.m; sourceTree = "<group>"; };
+		DDDD740D1ECDF74900A492D0 /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
+		DDDD740E1ECDF74900A492D0 /* MJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJConst.m; sourceTree = "<group>"; };
+		DDDD740F1ECDF74900A492D0 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		DDDD74101ECDF74900A492D0 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		DDDD74111ECDF74900A492D0 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		DDDD74121ECDF74900A492D0 /* MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJIvar.h; sourceTree = "<group>"; };
+		DDDD74131ECDF74900A492D0 /* MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJIvar.m; sourceTree = "<group>"; };
+		DDDD74141ECDF74900A492D0 /* MJMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMember.h; sourceTree = "<group>"; };
+		DDDD74151ECDF74900A492D0 /* MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMember.m; sourceTree = "<group>"; };
+		DDDD74161ECDF74900A492D0 /* MJMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMethod.h; sourceTree = "<group>"; };
+		DDDD74171ECDF74900A492D0 /* MJMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMethod.m; sourceTree = "<group>"; };
+		DDDD74181ECDF74900A492D0 /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		DDDD74191ECDF74900A492D0 /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		DDDD741A1ECDF74900A492D0 /* MJTypeEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTypeEncoding.h; sourceTree = "<group>"; };
+		DDDD741B1ECDF74900A492D0 /* MJTypeEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTypeEncoding.m; sourceTree = "<group>"; };
+		DDDD741C1ECDF74900A492D0 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		DDDD741D1ECDF74900A492D0 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		DDDD741E1ECDF74900A492D0 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		DDDD741F1ECDF74900A492D0 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		DDDD74201ECDF74900A492D0 /* NSObject+MJMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJMember.h"; sourceTree = "<group>"; };
+		DDDD74211ECDF74900A492D0 /* NSObject+MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJMember.m"; sourceTree = "<group>"; };
+		DDDD742E1ECDF79200A492D0 /* ShopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopModel.h; sourceTree = "<group>"; };
+		DDDD742F1ECDF79200A492D0 /* ShopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +146,10 @@
 		D83765AA1ECDAA0E00F03127 /* ZZJWaterFallView */ = {
 			isa = PBXGroup;
 			children = (
+				DDDD74091ECDF74900A492D0 /* Include */,
+				DDDD74061ECDF71200A492D0 /* Resources */,
+				DDDD73FF1ECDE91500A492D0 /* ZZJWaterFallView */,
+				DDDD742D1ECDF78100A492D0 /* Model */,
 				D83765AE1ECDAA0E00F03127 /* AppDelegate.h */,
 				D83765AF1ECDAA0E00F03127 /* AppDelegate.m */,
 				D83765B11ECDAA0E00F03127 /* ViewController.h */,
@@ -138,6 +187,72 @@
 				D83765D21ECDAA0F00F03127 /* Info.plist */,
 			);
 			path = ZZJWaterFallViewUITests;
+			sourceTree = "<group>";
+		};
+		DDDD73FF1ECDE91500A492D0 /* ZZJWaterFallView */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD74001ECDE9EE00A492D0 /* ZZJCollectionViewLayout.h */,
+				DDDD74011ECDE9EE00A492D0 /* ZZJCollectionViewLayout.m */,
+				DDDD74031ECDF64000A492D0 /* ZZJCollectionViewCell.h */,
+				DDDD74041ECDF64000A492D0 /* ZZJCollectionViewCell.m */,
+			);
+			path = ZZJWaterFallView;
+			sourceTree = "<group>";
+		};
+		DDDD74061ECDF71200A492D0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD74071ECDF71200A492D0 /* 1.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDDD74091ECDF74900A492D0 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD740A1ECDF74900A492D0 /* MJExtension */,
+			);
+			path = Include;
+			sourceTree = "<group>";
+		};
+		DDDD740A1ECDF74900A492D0 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD740B1ECDF74900A492D0 /* MJArgument.h */,
+				DDDD740C1ECDF74900A492D0 /* MJArgument.m */,
+				DDDD740D1ECDF74900A492D0 /* MJConst.h */,
+				DDDD740E1ECDF74900A492D0 /* MJConst.m */,
+				DDDD740F1ECDF74900A492D0 /* MJExtension.h */,
+				DDDD74101ECDF74900A492D0 /* MJFoundation.h */,
+				DDDD74111ECDF74900A492D0 /* MJFoundation.m */,
+				DDDD74121ECDF74900A492D0 /* MJIvar.h */,
+				DDDD74131ECDF74900A492D0 /* MJIvar.m */,
+				DDDD74141ECDF74900A492D0 /* MJMember.h */,
+				DDDD74151ECDF74900A492D0 /* MJMember.m */,
+				DDDD74161ECDF74900A492D0 /* MJMethod.h */,
+				DDDD74171ECDF74900A492D0 /* MJMethod.m */,
+				DDDD74181ECDF74900A492D0 /* MJType.h */,
+				DDDD74191ECDF74900A492D0 /* MJType.m */,
+				DDDD741A1ECDF74900A492D0 /* MJTypeEncoding.h */,
+				DDDD741B1ECDF74900A492D0 /* MJTypeEncoding.m */,
+				DDDD741C1ECDF74900A492D0 /* NSObject+MJCoding.h */,
+				DDDD741D1ECDF74900A492D0 /* NSObject+MJCoding.m */,
+				DDDD741E1ECDF74900A492D0 /* NSObject+MJKeyValue.h */,
+				DDDD741F1ECDF74900A492D0 /* NSObject+MJKeyValue.m */,
+				DDDD74201ECDF74900A492D0 /* NSObject+MJMember.h */,
+				DDDD74211ECDF74900A492D0 /* NSObject+MJMember.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		DDDD742D1ECDF78100A492D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD742E1ECDF79200A492D0 /* ShopModel.h */,
+				DDDD742F1ECDF79200A492D0 /* ShopModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +363,7 @@
 			files = (
 				D83765BB1ECDAA0F00F03127 /* LaunchScreen.storyboard in Resources */,
 				D83765B81ECDAA0F00F03127 /* Assets.xcassets in Resources */,
+				DDDD74081ECDF71200A492D0 /* 1.plist in Resources */,
 				D83765B61ECDAA0F00F03127 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,9 +389,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDD742C1ECDF74900A492D0 /* NSObject+MJMember.m in Sources */,
+				DDDD742A1ECDF74900A492D0 /* NSObject+MJCoding.m in Sources */,
+				DDDD74251ECDF74900A492D0 /* MJIvar.m in Sources */,
+				DDDD74301ECDF79200A492D0 /* ShopModel.m in Sources */,
+				DDDD74291ECDF74900A492D0 /* MJTypeEncoding.m in Sources */,
+				DDDD74051ECDF64000A492D0 /* ZZJCollectionViewCell.m in Sources */,
+				DDDD74221ECDF74900A492D0 /* MJArgument.m in Sources */,
+				DDDD74231ECDF74900A492D0 /* MJConst.m in Sources */,
+				DDDD74281ECDF74900A492D0 /* MJType.m in Sources */,
 				D83765B31ECDAA0F00F03127 /* ViewController.m in Sources */,
 				D83765B01ECDAA0E00F03127 /* AppDelegate.m in Sources */,
 				D83765AD1ECDAA0E00F03127 /* main.m in Sources */,
+				DDDD74271ECDF74900A492D0 /* MJMethod.m in Sources */,
+				DDDD74021ECDE9EE00A492D0 /* ZZJCollectionViewLayout.m in Sources */,
+				DDDD74261ECDF74900A492D0 /* MJMember.m in Sources */,
+				DDDD742B1ECDF74900A492D0 /* NSObject+MJKeyValue.m in Sources */,
+				DDDD74241ECDF74900A492D0 /* MJFoundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +639,7 @@
 				D83765D71ECDAA0F00F03127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D83765D81ECDAA0F00F03127 /* Build configuration list for PBXNativeTarget "ZZJWaterFallViewTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +648,7 @@
 				D83765DA1ECDAA0F00F03127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D83765DB1ECDAA0F00F03127 /* Build configuration list for PBXNativeTarget "ZZJWaterFallViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +657,7 @@
 				D83765DD1ECDAA0F00F03127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
