@@ -11,6 +11,7 @@
 //视图类
 #import "ZZJCollectionViewLayout.h"
 #import "ZZJCollectionViewCell.h"
+#import "DetailViewController.h"
 
 //工具类
 #import "MJExtension.h"
@@ -40,6 +41,7 @@
 
 - (void)setPage {
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"ZZJWaterFallView";
     
     //初始化数据
     NSArray *shopsArray = [ShopModel objectArrayWithFilename:@"1.plist"];
@@ -61,6 +63,11 @@
 }
 
 #pragma mark -- UICollectionViewDelegate && UICollectionViewDataSource
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    
+    return 1;
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     NSLog(@"%ld",self.shops.count);
     return self.shops.count;
@@ -69,10 +76,21 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     ZZJCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ZZJCollectionCellID forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor redColor];
-    cell.shop = self.shops[indexPath.row];
+    //防止复用
+    for (UIView *view in cell.subviews) {
+        [view removeFromSuperview];
+    }
+    cell.shop = [self.shops objectAtIndex:indexPath.row];
+    [cell sizeToFit];
     [cell configCell];
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    DetailViewController *vc = [[DetailViewController alloc] init];
+    vc.shop = self.shops[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
+    NSLog(@"点击了第%ld行",indexPath.row);
 }
 
 #pragma mark -- ZZJCollectionViewLayoutDelegate

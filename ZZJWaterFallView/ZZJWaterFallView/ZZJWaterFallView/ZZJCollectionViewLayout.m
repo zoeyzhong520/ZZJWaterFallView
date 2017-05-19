@@ -50,9 +50,10 @@
     
     //计算尺寸
     CGFloat width = (self.collectionView.frame.size.width - self.sectionInset.left - self.sectionInset.right - (self.columnsCount - 1) * self.colMargin) / self.columnsCount;
+    //NSLog(@"width---%f",width);
     // 代理计算传入高的值
     CGFloat height = [self.collectionViewLayoutDelegate flowLayout:self heightForWidth:width atIndexPath:indexPath];
-    
+    NSLog(@"height---%f",height);
     //假设最短的那一列的第0列
     __block NSString *minColumn = @"0";
     // 遍历字典找出最短的那一列
@@ -86,7 +87,7 @@
     //总item数
     NSInteger count = [self.collectionView numberOfItemsInSection:0];
     for (int i=0;i<count;i++) {
-        UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
+        UICollectionViewLayoutAttributes *attributes = [self layoutAttributesForItemAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
         [self.attributeArray addObject:attributes];
     }
 }
